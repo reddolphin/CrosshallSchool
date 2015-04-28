@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link href="LogoDemo.css" rel="stylesheet" type="text/css"/>
+
+    <style>
+        .winning_x {
+            stroke: #ff15c9;
+            filter: url('#dropshadow');
+        }
+    </style>
+
+</head>
+<body>
+<svg width="0" height="0" xmlns="http://www.w3.org/2000/svg"> <!--width="107" height="112" -->
+    <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+    <defs>
+        <filter id="dropshadow" height="130%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="1"/> <!-- stdDeviation is how much to blur -->
+            <feOffset dx="2" dy="2" result="offsetblur"/> <!-- how much to offset -->
+            <feMerge>
+                <feMergeNode/> <!-- this contains the offset blurred image -->
+                <feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
+            </feMerge>
+        </filter>
+        <g id="shape">
+            <title>Crosshall Jumnior School Logo</title>
+            <circle id="circle1Outer" fill="none" r="27.5" cy="57" cx="29"/>
+            <circle id="circle1inner" fill="none" r="24.5" cy="57" cx="29"/>
+            <circle id="circle2Outer" fill="none" r="29.5" cy="35" cx="54"/>
+            <circle id="circle2inner" fill="none" r="32.5" cy="35" cx="54"/>
+            <circle id="circle3Outer" fill="none" r="37.5" cy="71" cx="68"/>
+            <circle id="circle3inner" fill="none" r="34.5" cy="71" cx="68"/>
+        </g>
+    </defs>
+</svg>
+<h1>House Point Examples</h1>
+<div id="demo1" class="demoContainer">
+    <h3>1) Plain logo using SVG and png images as backup</h3>
+    <div class="demoStripOuter">
+        <div class="demoStripInner">
+            <div id="logo1" class="logoDemo London">
+                <svg width="111" height="112" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#shape" x="0" y="0"/>
+                </svg>
+                <img src="London.png" class="imagefallback">
+                <p>London</p>
+                <p>102222</p>
+            </div>
+
+            <div id="logo2" class="logoDemo Cardiff " >
+                <svg width="109" height="112" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#shape" x="0" y="0" />
+                </svg>
+                <p>Cardiff</p>
+                <p>102222</p>
+            </div>
+
+            <div id="logo3" class="logoDemo Belfast " >
+                <svg width="109" height="112" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#shape" x="0" y="0" />
+                </svg>
+                <p>Belfast</p>
+                <p>102222</p>
+            </div>
+
+            <div id="logo4" class="logoDemo Edinburgh " >
+                <svg width="109" height="112" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#shape" x="0" y="0" />
+                </svg>
+                <p>Edinburgh</p>
+                <p>102222</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="demo2" class="demoContainer">
+    <h3>2) Plain logo using SVG and png images as backup, Winner Glowing</h3>
+    <div class="demoStripOuter">
+        <div class="demoStripInner">
+            <div class="logoDemo London">
+                <svg width="111" height="112" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#shape" x="0" y="0"/>
+                </svg>
+                <p>London</p>
+                <p>102222</p>
+            </div>
+
+            <div class="logoDemo Cardiff winning" >
+                <svg width="109" height="112" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#shape" x="0" y="0" class='winning'/>
+                </svg>
+                <p>Cardiff</p>
+                <p>102222</p>
+            </div>
+
+            <div class="logoDemo Belfast " >
+                <svg width="109" height="112" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#shape" x="0" y="0" />
+                </svg>
+                <p>Belfast</p>
+                <p>102222</p>
+            </div>
+
+            <div class="logoDemo Edinburgh " >
+                <svg width="109" height="112" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#shape" x="0" y="0" />
+                </svg>
+                <p>Edinburgh</p>
+                <p>102222</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+
+h1:before{
+    content: '';
+    position: absolute;
+    top: 105%;
+    top: -webkit-calc(100% + 3px);
+    top: calc(100% + 3px);
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #3eb0a1;
+}
+
+.imagefallback{
+    margin-top:-109px;
+}
+
+.demoContainer {
+    border-bottom: double 10px #3eb0a1;
+}
+
+.logoDemo {
+    text-align: center;
+    width: 110px;
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.demoStripOuter {
+    margin: 40px;
+    background: #d8d8d8;
+    padding-top: 20px;
+}
+
+.demoStripInner {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.London{
+    stroke: #ff1627;
+}
+
+.Cardiff {
+    stroke: #1622ff;
+}
+
+.Belfast{
+    stroke: #15ff0f;
+}
+
+.Edinburgh {
+    stroke: #fff60e;
+
+}
+
+@keyframes example {
+    from {stroke: red;}
+    to {stroke: yellow;}
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    from {stroke: red;}
+    to {stroke: yellow;}
+}
+
+#demo2 .winning {
+    animation-name: example;
+    animation-duration: 4s;
+}

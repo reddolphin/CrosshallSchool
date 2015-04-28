@@ -39,19 +39,49 @@
 </svg>
 <h1>House Point Examples</h1>
 <div id="demo1" class="demoContainer">
-    <h3>1) Plain logo using SVG and png images as backup</h3>
+    <h3>1) Plain logo using png images</h3>
     <div class="demoStripOuter">
         <div class="demoStripInner">
-            <div id="logo1" class="logoDemo London">
-                <svg width="111" height="112" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#shape" x="0" y="0"/>
-                </svg>
-                <img src="London.png" class="imagefallback">
+            <div class="logoDemo London">
+                <img src="London.png">
                 <p>London</p>
                 <p>102222</p>
             </div>
 
-            <div id="logo2" class="logoDemo Cardiff " >
+            <div class="logoDemo Cardiff " >
+                <img src="Cardiff.png">
+                <p>Cardiff</p>
+                <p>102222</p>
+            </div>
+
+            <div class="logoDemo Belfast " >
+                <img src="Belfast.png">
+                <p>Belfast</p>
+                <p>102222</p>
+            </div>
+
+            <div class="logoDemo Edinburgh " >
+                <img src="Edinburgh.png">
+                <p>Edinburgh</p>
+                <p>102222</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="demo2" class="demoContainer">
+    <h3>2) Plain logo using SVG</h3>
+    <div class="demoStripOuter">
+        <div class="demoStripInner">
+            <div class="logoDemo London">
+                <svg width="111" height="112" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#shape" x="0" y="0"/>
+                </svg>
+                <p>London</p>
+                <p>102222</p>
+            </div>
+
+            <div class="logoDemo Cardiff " >
                 <svg width="109" height="112" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="#shape" x="0" y="0" />
                 </svg>
@@ -59,7 +89,7 @@
                 <p>102222</p>
             </div>
 
-            <div id="logo3" class="logoDemo Belfast " >
+            <div class="logoDemo Belfast " >
                 <svg width="109" height="112" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="#shape" x="0" y="0" />
                 </svg>
@@ -67,7 +97,7 @@
                 <p>102222</p>
             </div>
 
-            <div id="logo4" class="logoDemo Edinburgh " >
+            <div class="logoDemo Edinburgh " >
                 <svg width="109" height="112" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="#shape" x="0" y="0" />
                 </svg>
@@ -78,8 +108,8 @@
     </div>
 </div>
 
-<div id="demo2" class="demoContainer">
-    <h3>2) Plain logo using SVG and png images as backup, Winner Glowing</h3>
+<div id="demo3" class="demoContainer">
+    <h3>3) Plain logo using SVG and Winner Glowing</h3>
     <div class="demoStripOuter">
         <div class="demoStripInner">
             <div class="logoDemo London">
@@ -117,7 +147,73 @@
     </div>
 </div>
 
-
+<div id="demo4" class="demoContainer">
+    <h3>3) Plain logo using SVG and Flipping on hover</h3>
+    <div class="demoStripOuter">
+        <div class="demoStripInner">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="logoDemo London " >
+                            <svg width="109" height="112" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#shape" x="0" y="0" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="back logoDemo">
+                        <p>London</p>
+                        <p>102222</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="logoDemo Cardiff " >
+                            <svg width="109" height="112" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#shape" x="0" y="0" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="back logoDemo">
+                        <p>Cardiff</p>
+                        <p>102222</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="logoDemo Belfast " >
+                            <svg width="109" height="112" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#shape" x="0" y="0" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="back logoDemo">
+                        <p>Belfast</p>
+                        <p>102222</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="logoDemo Edinburgh " >
+                            <svg width="109" height="112" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#shape" x="0" y="0" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="back logoDemo">
+                        <p>Edinburgh</p>
+                        <p>102222</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

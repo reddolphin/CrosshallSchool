@@ -37,19 +37,23 @@ h1:before{
 }
 
 .London{
-    stroke: #ff1627;
+    stroke: #f9fbff;
+}
+
+.London #circle1Outer, .London #circle1inner{
+    stroke: #1d33c4;
 }
 
 .Cardiff {
-    stroke: #1622ff;
+    stroke: #ff2415;
 }
 
 .Belfast{
-    stroke: #15ff0f;
+    stroke: #0eab0a;
 }
 
 .Edinburgh {
-    stroke: #fff60e;
+    stroke: #1d33c4;
 
 }
 

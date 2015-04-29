@@ -28,12 +28,12 @@
         </filter>
         <g id="shape">
             <title>Crosshall Jumnior School Logo</title>
-            <circle id="circle1Outer" fill="none" r="27.5" cy="57" cx="29"/>
-            <circle id="circle1inner" fill="none" r="24.5" cy="57" cx="29"/>
-            <circle id="circle2Outer" fill="none" r="29.5" cy="35" cx="54"/>
-            <circle id="circle2inner" fill="none" r="32.5" cy="35" cx="54"/>
-            <circle id="circle3Outer" fill="none" r="37.5" cy="71" cx="68"/>
-            <circle id="circle3inner" fill="none" r="34.5" cy="71" cx="68"/>
+            <circle class="circle1Outer" fill="none" r="27.5" cy="57" cx="29"/>
+            <circle class="circle1inner" fill="none" r="24.5" cy="57" cx="29"/>
+            <circle class="circle2Outer" fill="none" r="29.5" cy="35" cx="54"/>
+            <circle class="circle2inner" fill="none" r="32.5" cy="35" cx="54"/>
+            <circle class="circle3Outer" fill="none" r="37.5" cy="71" cx="68"/>
+            <circle class="circle3inner" fill="none" r="34.5" cy="71" cx="68"/>
         </g>
     </defs>
 </svg>
@@ -148,7 +148,75 @@
 </div>
 
 <div id="demo4" class="demoContainer">
-    <h3>3) Plain logo using SVG and Flipping on hover</h3>
+    <h3>4) SVG logo and Flipping on hover</h3>
+    <div class="demoStripOuter">
+        <div class="demoStripInner">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="logoDemo London " >
+                            <svg width="109" height="112" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#shape" x="0" y="0" />
+                            </svg>
+                            <p>London</p>
+                        </div>
+                    </div>
+                    <div class="back logoDemo">
+                        <p>102222</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="logoDemo Cardiff " >
+                            <svg width="109" height="112" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#shape" x="0" y="0" />
+                            </svg>
+                            <p>Cardiff</p>
+                        </div>
+                    </div>
+                    <div class="back logoDemo">
+                        <p>102222</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="logoDemo Belfast " >
+                            <svg width="109" height="112" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#shape" x="0" y="0" />
+                            </svg>
+                            <p>Belfast</p>
+                        </div>
+                    </div>
+                    <div class="back logoDemo">
+                        <p>102222</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="logoDemo Edinburgh " >
+                            <svg width="109" height="112" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#shape" x="0" y="0" />
+                            </svg>
+                            <p>Edinburgh</p>
+                        </div>
+                    </div>
+                    <div class="back logoDemo">
+                        <p>102222</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="demo5" class="demoContainer">
+    <h3>5) SVG logo, Flipping on hover, and glowing winning house</h3>
     <div class="demoStripOuter">
         <div class="demoStripInner">
             <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
@@ -169,7 +237,7 @@
             <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                 <div class="flipper">
                     <div class="front">
-                        <div class="logoDemo Cardiff " >
+                        <div class="logoDemo Cardiff winning" >
                             <svg width="109" height="112" xmlns="http://www.w3.org/2000/svg">
                                 <use xlink:href="#shape" x="0" y="0" />
                             </svg>
@@ -210,6 +278,77 @@
                         <p>102222</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="demo6" class="demoContainer">
+    <h3>6) SVG logo, single ring animation signifying winning house</h3>
+    <div class="demoStripOuter">
+        <div class="demoStripInner">
+            <div class="logoDemo London">
+                <svg width="111" height="112" xmlns="http://www.w3.org/2000/svg">
+                    <g id="shapeLondon">
+                        <title>Crosshall Jumnior School Logo</title>
+                        <circle class="circle1Outer" fill="none" r="27.5" cy="57" cx="29"/>
+                        <circle class="circle1inner" fill="none" r="24.5" cy="57" cx="29"/>
+                        <circle class="circle2Outer" fill="none" r="29.5" cy="35" cx="54"/>
+                        <circle class="circle2inner" fill="none" r="32.5" cy="35" cx="54"/>
+                        <circle class="circle3Outer" fill="none" r="37.5" cy="71" cx="68"/>
+                        <circle class="circle3inner" fill="none" r="34.5" cy="71" cx="68"/>
+                    </g>
+                </svg>
+                <p>London</p>
+                <p>102222</p>
+            </div>
+
+            <div class="logoDemo Cardiff winning" >
+                <svg width="109" height="112" xmlns="http://www.w3.org/2000/svg">
+                    <g id="shapeCardiff">
+                        <title>Crosshall Jumnior School Logo</title>
+                        <circle class="circle1Outer" fill="none" r="27.5" cy="57" cx="29"/>
+                        <circle class="circle1inner" fill="none" r="24.5" cy="57" cx="29"/>
+                        <circle class="circle2Outer" fill="none" r="29.5" cy="35" cx="54"/>
+                        <circle class="circle2inner" fill="none" r="32.5" cy="35" cx="54"/>
+                        <circle class="circle3Outer" fill="none" r="37.5" cy="71" cx="68"/>
+                        <circle class="circle3inner" fill="none" r="34.5" cy="71" cx="68"/>
+                    </g>
+                </svg>
+                <p>Cardiff</p>
+                <p>102222</p>
+            </div>
+
+            <div class="logoDemo Belfast " >
+                <svg width="109" height="112" xmlns="http://www.w3.org/2000/svg">
+                    <g id="shapeBelfast">
+                        <title>Crosshall Jumnior School Logo</title>
+                        <circle class="circle1Outer" fill="none" r="27.5" cy="57" cx="29"/>
+                        <circle class="circle1inner" fill="none" r="24.5" cy="57" cx="29"/>
+                        <circle class="circle2Outer" fill="none" r="29.5" cy="35" cx="54"/>
+                        <circle class="circle2inner" fill="none" r="32.5" cy="35" cx="54"/>
+                        <circle class="circle3Outer" fill="none" r="37.5" cy="71" cx="68"/>
+                        <circle class="circle3inner" fill="none" r="34.5" cy="71" cx="68"/>
+                    </g>
+                </svg>
+                <p>Belfast</p>
+                <p>102222</p>
+            </div>
+
+            <div class="logoDemo Edinburgh " >
+                <svg width="109" height="112" xmlns="http://www.w3.org/2000/svg">
+                    <g id="shapeEdinburgh">
+                        <title>Crosshall Jumnior School Logo</title>
+                        <circle class="circle1Outer" fill="none" r="27.5" cy="57" cx="29"/>
+                        <circle class="circle1inner" fill="none" r="24.5" cy="57" cx="29"/>
+                        <circle class="circle2Outer" fill="none" r="29.5" cy="35" cx="54"/>
+                        <circle class="circle2inner" fill="none" r="32.5" cy="35" cx="54"/>
+                        <circle class="circle3Outer" fill="none" r="37.5" cy="71" cx="68"/>
+                        <circle class="circle3inner" fill="none" r="34.5" cy="71" cx="68"/>
+                    </g>
+                </svg>
+                <p>Edinburgh</p>
+                <p>102222</p>
             </div>
         </div>
     </div>

@@ -3,6 +3,7 @@ body{
 }
 
 
+/*
 h1:before{
     content: '';
     position: absolute;
@@ -10,8 +11,7 @@ h1:before{
     width: 100%;
     background: #3eb0a1;
 }
-
-
+*/
 
 .demoContainer {
     border-bottom: double 10px #3eb0a1;
@@ -31,6 +31,14 @@ h1:before{
     padding-top: 20px;
 }
 
+.demoStripOuter {
+    height: 200px;
+    background: -webkit-linear-gradient(#b9b9b9, #d8d8d8); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#b9b9b9, #d8d8d8); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#b9b9b9, #d8d8d8); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#b9b9b9, #d8d8d8); /* Standard syntax (must be last) */
+}
+
 .demoStripInner {
     margin: 0 auto;
     max-width: 600px;
@@ -38,10 +46,6 @@ h1:before{
 
 .London{
     stroke: #f9fbff;
-}
-
-.London #circle1Outer, .London #circle1inner{
-    stroke: #1d33c4;
 }
 
 .Cardiff {
@@ -155,4 +159,111 @@ h1:before{
 /* back, initially hidden pane */
 .back {
     transform: rotateY(180deg);
+}
+
+#demo4 .back {
+    line-height: 100px;
+    padding-left: 70px;
+}
+
+/*Demo 5 with gold winner*/
+#demo5 .winning {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 8s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite;
+}
+
+/*Demo 6 Exploding wheels*/
+
+@keyframes demo6 {
+    from
+    {
+        color: #ff710a;
+    }
+
+    to
+    {
+        color: yellow;
+    }
+
+    0%   {}
+    40%  {stroke: yellow;}
+    100% {}
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes demo6 {
+    from
+    {
+        color: #ff710a;
+    }
+
+    to
+    {
+        color: yellow;
+    }
+
+    0%   {}
+    25%  {
+        stroke: yellow;
+    }
+    100% {}
+}
+
+#demo6 .winning .circle1Outer, #demo6 .winning .circle1inner{
+    animation-name: demo6;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: demo6; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 8s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes demo6a {
+from
+{
+    color: #ff710a;
+}
+
+to
+{
+    color: yellow;
+}
+
+0%   {}
+40%  {stroke: yellow;}
+100% {}
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes demo6a {
+    from
+    {
+        left: 0;
+    }
+
+    to
+    {
+        left: 100px;
+    }
+
+    0%   {}
+    25%  {
+        top: 10px;
+    }
+    100% {}
+}
+
+#demo6 .winning .circle2Outer, #demo6 .winning .circle2inner{
+    animation-name: demo6a;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: demo6a; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 8s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite;
+}
+
+#demo6 .winning .circle2Outer {
+    left:71px;
 }
